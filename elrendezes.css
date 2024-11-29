@@ -68,7 +68,7 @@ nav ul li a:hover {
 
 article {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 oszlop */
     gap: 1.5rem;
     padding: 2rem;
 }
@@ -94,6 +94,13 @@ article {
     color: #666;
 }
 
+.kepek img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 footer {
     background-color: #d6d6d6;
     text-align: center;
@@ -108,12 +115,6 @@ footer {
 /* Reszponzív stílusok */
 @media (min-width: 768px) {
     article {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    article {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto); /* 3 sor */
     }
 }
