@@ -13,17 +13,19 @@ body {
 
 main {
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     max-width: 1200px;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
+    border-radius: 24px;
     overflow: hidden;
 }
 
 header {
     background-color: #d6d6d6;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -48,6 +50,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    gap: 200px;
 }
 
 nav ul li {
@@ -71,6 +74,7 @@ article {
     grid-template-columns: repeat(2, 1fr); /* 2 oszlop */
     gap: 1.5rem;
     padding: 2rem;
+    margin-bottom: 20px;
 }
 
 .kepek {
@@ -104,17 +108,23 @@ article {
 footer {
     background-color: #d6d6d6;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
-    font-size: 0.9rem;
     color: #444;
 }
 
 /* Reszponzív stílusok */
-@media (min-width: 768px) {
+
+@media (min-width: 150px) {
     article {
-        grid-template-rows: repeat(3, auto); /* 3 sor */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
