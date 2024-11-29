@@ -1,0 +1,60 @@
+article {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+img {
+    max-width: 80%;
+    margin-top: -150px;
+}
+
+.kepek {
+    max-height: 250px;
+}
+
+img:hover {
+    transition: transform 0, box-shadow 0;
+}
+
+/* Általános beállítások a táblázatokhoz */
+table {
+    width: 100%;
+    border-collapse: collapse; /* A táblázat cellák közötti távolságot eltünteti */
+    margin: 20px 0; /* Egy kis margó a táblázat körül */
+    font-family: Arial, sans-serif; /* A táblázat betűtípusa */
+}
+
+/* Táblázat fejlécének stílusa */
+th {
+    background-color: #666; /* Zöld háttér szín a fejlécnek */
+    color: white; /* Fehér szöveg */
+    padding: 12px; /* A cellák körüli térköz */
+    text-align: left; /* Balra igazított szöveg */
+}
+
+/* Táblázat adatainak cella stílusa */
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Világosszürke szegélyek */
+}
+
+/* Sorok háttér színe váltakozása */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Minden páros sorszámú sor szürkés háttér */
+}
+
+/* Táblázat sorok egérre történő rákattintásakor */
+tr:hover {
+    background-color: #ddd; /* Hover szín, amikor az egér a sorra kerül */
+}
+
+/* Table container: a táblázat körüli doboz */
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék a táblázat körül */
+    border-radius: 8px; /* Lekerekített sarkok */
+}
+
+/* Táblázatok szegélyének stílusa */
+th, td {
+    border: 1px solid #ddd;
+}
