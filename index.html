@@ -16,10 +16,12 @@
             <ul>
                 <li><a href="#">Kezdőlap</a></li>
                 <li><a href="#">Modellek</a></li>
+                <li><a id="toggle-aside" href="#">További információk</a></li>
             </ul>
         </nav>
-        <aside>
-
+        <aside id="info-aside" style="display: none;">
+            <h2>További információk</h2>
+            <p>Itt jelennek meg a további részletek, amelyeket a látogató bekapcsolhat.</p>
         </aside>
         <article>
             <div class="kepek">
@@ -51,5 +53,21 @@
             <p>Dezső Vince & Tóth Barnabás</p>
         </footer>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("toggle-aside");
+            const asideElement = document.getElementById("info-aside");
+    
+            toggleButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Az oldal ne ugorjon a linkre
+                if (asideElement.style.display === "none") {
+                    asideElement.style.display = "block";
+                } else {
+                    asideElement.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
