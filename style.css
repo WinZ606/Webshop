@@ -12,59 +12,52 @@ img {
     transition: transform 0, box-shadow 0;
 }
 
-/* Általános beállítások a táblázatokhoz */
 table {
     width: 100%;
-    border-collapse: collapse; /* A táblázat cellák közötti távolságot eltünteti */
-    margin: 20px 0; /* Egy kis margó a táblázat körül */
-    font-family: Arial, sans-serif; /* A táblázat betűtípusa */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Táblázat fejlécének stílusa */
 th {
-    background-color: #666; /* Zöld háttér szín a fejlécnek */
-    color: white; /* Fehér szöveg */
-    padding: 12px; /* A cellák körüli térköz */
-    text-align: left; /* Balra igazított szöveg */
+    background-color: #666;
+    color: white;
+    padding: 12px;
+    text-align: left;
 }
 
-/* Táblázat adatainak cella stílusa */
 td {
     padding: 12px;
     text-align: left;
-    border: 1px solid #ddd; /* Világosszürke szegélyek */
+    border: 1px solid #ddd;
 }
 
-/* Sorok háttér színe váltakozása */
 tr:nth-child(even) {
-    background-color: #f2f2f2; /* Minden páros sorszámú sor szürkés háttér */
+    background-color: #f2f2f2;
 }
 
-/* Táblázat sorok egérre történő rákattintásakor */
 tr:hover {
-    background-color: #ddd; /* Hover szín, amikor az egér a sorra kerül */
+    background-color: #ddd;
 }
 
-/* Table container: a táblázat körüli doboz */
 table {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék a táblázat körül */
-    border-radius: 8px; /* Lekerekített sarkok */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Táblázatok szegélyének stílusa */
 th, td {
     border: 1px solid #ddd;
 }
 
 @media (max-width: 1000px) {
-    img{
+    img {
         max-width: 100%;
         margin-top: -120px;
     }
 }
 
 @media (max-width: 700px) {
-    img{
+    img {
         max-width: 100%;
         margin-top: auto;
 
